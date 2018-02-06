@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mirror Message Generator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Questrial" rel="stylesheet">
+</head>
         <body>
-            <header></header>
+            <header>
+                <h1>Mirror Message Generator</h1>
+            </header>
             <form action="">
                 <h2>Overall Topic</h2>
                 <input type="radio" name="theme" value="career" id="career">
@@ -23,30 +28,33 @@
                 
 
                 <h2>Personality/Tone of Voice</h2>
-                <input type="radio" name="mood" value="mood-boho" id="mood-boho">
-                <label for="mood-boho">Boho</label>
+                <input type="radio" name="mood" value="boho" id="boho">
+                <label for="boho">Boho</label>
                 
-                <input type="radio" name="mood" value="mood-sarcasm" id="mood-sarcasm">
-                <label for="mood-sarcasm">Sarcasm</label>
+                <input type="radio" name="mood" value="sarcasm" id="sarcasm">
+                <label for="sarcasm">Sarcasm</label>
                 
-                <input type="radio" name="mood" value="mood-funny" id="mood-funny">
-                <label for="mood-funny">Funny</label>
+                <input type="radio" name="mood" value="funny" id="funny">
+                <label for="funny">Funny</label>
                 
-                <input type="radio" name="mood" value="mood-tough" id="mood-tough">
-                <label for="mood-tough">I need some tough love.</label>
+                <input type="radio" name="mood" value="tough" id="tough">
+                <label for="tough">Serious</label>
                 
 
                 <h2>Length</h2>
-                <input type="radio" name="length" value="length-short" id="length-short">
-                <label for="length-short">Short</label>
+                <input type="radio" name="length" value="short" id="short">
+                <label for="short">Short</label>
                 
-                <input type="radio" name="length" value="length-long" id="length-long">
-                <label for="length-long">Long</label>
-                
+                <input type="radio" name="length" value="long" id="long">
+                <label for="long">Long</label> 
                 
 
                 <button>Submit</button>
             </form>
+            <section class="results">
+                <h2 class="hidden">Your mirror Message</h2>
+                <div class="box hidden"></div>
+            </section>
             <footer>
                 <h3></h3>
             </footer>
