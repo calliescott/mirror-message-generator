@@ -6,47 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mirror Message Generator</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Open+Sans+Condensed:300" rel="stylesheet">
 </head>
         <body>
             <header>
-                <h1>Mirror Message Generator</h1>
+                <div class="wrapper">
+                    <h3>Need a little inspiration?</h3>
+                    <h1>Mirror Message Generator</h1>
+                    <h3>Answer the questions below to create your motivational quote!</h3>
+                    <a href="#question1">Let's go</a>
+                </div>
             </header>
             <form action="">
-                <h2>Overall Topic</h2>
-                <input type="radio" name="theme" value="career" id="career">
-                <label for="career">Career</label>
+                <div class="questions" id=:>
+                    <h2>Overall Topic</h2>
+                    <input type="radio" name="theme" value="career" id="career">
+                    <label for="career">Career</label>
 
-                <input type="radio" name="theme" value="relationships" id="relationships">
-                <label for="relationships">Relationships</label>
+                    <input type="radio" name="theme" value="relationships" id="relationships">
+                    <label for="relationships">Relationships</label>
+                    
+                    <input type="radio" name="theme" value="health" id="health">
+                    <label for="health">Health</label>
+                    
+                    <input type="radio" name="theme" value="general" id="general">
+                    <label for="general">General</label>
+                </div>
                 
-                <input type="radio" name="theme" value="health" id="health">
-                <label for="health">Health</label>
+                <div class="questions">
+                    <h2>Personality/Tone of Voice</h2>
+                    <input type="radio" name="mood" value="boho" id="boho">
+                    <label for="boho">Boho</label>
+                    
+                    <input type="radio" name="mood" value="sarcasm" id="sarcasm">
+                    <label for="sarcasm">Sarcasm</label>
+                    
+                    <input type="radio" name="mood" value="funny" id="funny">
+                    <label for="funny">Funny</label>
+                    
+                    <input type="radio" name="mood" value="tough" id="tough">
+                    <label for="tough">Serious</label>
+                </div>
                 
-                <input type="radio" name="theme" value="general" id="general">
-                <label for="general">General</label>
-                
-
-                <h2>Personality/Tone of Voice</h2>
-                <input type="radio" name="mood" value="boho" id="boho">
-                <label for="boho">Boho</label>
-                
-                <input type="radio" name="mood" value="sarcasm" id="sarcasm">
-                <label for="sarcasm">Sarcasm</label>
-                
-                <input type="radio" name="mood" value="funny" id="funny">
-                <label for="funny">Funny</label>
-                
-                <input type="radio" name="mood" value="tough" id="tough">
-                <label for="tough">Serious</label>
-                
-
-                <h2>Length</h2>
-                <input type="radio" name="length" value="short" id="short">
-                <label for="short">Short</label>
-                
-                <input type="radio" name="length" value="long" id="long">
-                <label for="long">Long</label> 
+                <div class="questions">
+                    <h2>Length</h2>
+                    <input type="radio" name="length" value="short" id="short">
+                    <label for="short">Short</label>
+                    
+                    <input type="radio" name="length" value="long" id="long">
+                    <label for="long">Long</label> 
+                </div>
                 
 
                 <button>Submit</button>

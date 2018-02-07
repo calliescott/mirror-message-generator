@@ -1,11 +1,15 @@
 /*
 FONTS:
-    font-family: 'Just Me Again Down Here', cursive;
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Homemade Apple', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
 */
 
-
 h1 {
-    font-family: 'Just Me Again Down Here', cursive;
-    font-size: 5rem;
+    font-family: $mainHeaderFont;
+    font-size: 6rem; /*makes font 60px*/
+    color: $primaryPink;
+}
+
+h3 {
+    letter-spacing: .3rem;
 }

@@ -2,6 +2,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+@import "variables.scss";
+@import "typography.scss";
+@import "partials/header.scss";
+@import "partials/questions.scss";
+@import "partials/results.scss";
+@import "partials/footer.scss";
+
+
+
 
 html {
     font-size: 62.5%
@@ -9,21 +18,13 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: $baseFont;
 }
 
-@import "typography.scss";
-@import "partials/header.scss";
-@import "partials/results.scss";
-@import "partials/footer.scss";
-
-.hidden {
-        visibility: hidden;
-    }
-
-
-.box {
-    height: 300px;
-    width: 400px;
-    background-color: teal;
+.wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
 }
+
+
 
