@@ -21,6 +21,12 @@ body {
     font-family: $baseFont;
 }
 
+a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
 .wrapper {
     max-width: 1080px;
     margin: 0 auto;

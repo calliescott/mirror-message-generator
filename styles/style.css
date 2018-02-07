@@ -143,7 +143,7 @@ h1 {
   font-family: "Homemade Apple", cursive;
   font-size: 6rem;
   /*makes font 60px*/
-  color: #FC0281; }
+  color: #f13030; }
 
 h3 {
   letter-spacing: .3rem; }
@@ -165,14 +165,152 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+  header .start-link {
+    padding: 10px 25px;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    margin: 0 auto;
+    border: none; }
+  header .start-link span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%; }
+  header .start-link:before, header .start-link:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 2px;
+    background: #000; }
+  header .start-link:before {
+    right: 0;
+    top: 0;
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease; }
+  header .start-link:after {
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all 0.1s 0.2s ease;
+    -o-transition: all 0.1s 0.2s ease;
+    transition: all 0.1s 0.2s ease; }
+  header .start-link:hover:before {
+    -webkit-transition: all 0.1s 0.2s ease;
+    -o-transition: all 0.1s 0.2s ease;
+    transition: all 0.1s 0.2s ease;
+    height: 100%; }
+  header .start-link:hover:after {
+    -webkit-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    height: 100%; }
+  header .start-link span:before, header .start-link span:after {
+    position: absolute;
+    content: "";
+    background: #000; }
+  header .start-link span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 2px;
+    -webkit-transition: all 0.1s 0.1s ease;
+    -o-transition: all 0.1s 0.1s ease;
+    transition: all 0.1s 0.1s ease; }
+  header .start-link span:after {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; }
+  header .start-link span:hover:before {
+    width: 100%; }
 
 .hidden {
   visibility: hidden; }
 
-.box {
-  height: 300px;
-  width: 400px;
-  background-color: teal; }
+form {
+  width: 100%;
+  height: 100%;
+  background-color: #ff715b;
+  padding: 5rem 0rem; }
+  form h2 {
+    text-transform: uppercase;
+    text-align: center; }
+
+.questions {
+  height: 100%;
+  width: 100%;
+  padding: 5rem 0rem;
+  background-color: white;
+  border-radius: 1.2rem;
+  margin-bottom: 1.2rem; }
+  .questions .theme-container input[type="radio"] {
+    display: none; }
+
+.theme-container {
+  margin-bottom: 10px;
+  padding: 1rem;
+  max-width: calc(100% - 12rem);
+  margin-right: 2rem;
+  margin-left: 10rem;
+  text-align: left; }
+
+.theme-container label {
+  position: relative; }
+
+.theme-container span.radio::before, .theme-container span.radio::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0; }
+
+.theme-container span.radio:hover {
+  cursor: pointer; }
+
+.theme-container span.radio::before {
+  left: -52px;
+  width: 45px;
+  height: 25px;
+  background-color: #f13030;
+  border-radius: 50px; }
+
+.theme-container span.radio::after {
+  left: -49px;
+  width: 17px;
+  height: 17px;
+  border-radius: 10px;
+  background-color: #ff715b;
+  -webkit-transition: left 0.25s, background-color 0.25s;
+  -o-transition: left 0.25s, background-color 0.25s;
+  transition: left 0.25s, background-color 0.25s; }
+
+input[type="radio"]:checked + label span.radio::after {
+  left: -27px;
+  background-color: #4c4c47; }
+
+.box-img {
+  height: 100%;
+  max-width: calc(100% - 60rem);
+  margin: 2rem 30rem;
+  background-color: #ff715b;
+  border-radius: 12px;
+  display: block; }
+  .box-img img {
+    width: calc(100% - 5rem);
+    height: 100%;
+    padding: 0;
+    margin: 2.5rem;
+    border-radius: 12px; }
 
 html {
   font-size: 62.5%; }
@@ -180,6 +318,11 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Open Sans Condensed", sans-serif; }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center; }
 
 .wrapper {
   max-width: 1080px;

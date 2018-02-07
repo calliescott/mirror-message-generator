@@ -236,10 +236,6 @@ mirrorApp.mirrorMessages = {
     ] //closing the general array within the mirrorApp.mirrorMessages object
 }; //Closing the mirrorApp.mirrorMessages object
 
-
-
-
-
 //User answers questions
 // Q1: determines the topic (Career, Relationships, Health or General)
 // Q2: determines the tone of voice (Boho, Funny, Serious or Sarcastic)
@@ -292,13 +288,25 @@ mirrorApp.events = function () {
             }
         }
 
+        //creating a variable to hold the selected mirror messages image path for later.
         mirrorApp.img = mirrorApp.themeMoodLength[0].image;
-        console.log(mirrorApp.img);
+        //creating a variable to hold the selected mirror messages alt tag content for later.
+        mirrorApp.alt = mirrorApp.themeMoodLength[0].alt;
+        
 
 
-        // $('.hidden').removeClass(`hidden`); // this code removes the class of hidden-title form the h2 of the .results section.
-        // $('.box').prepend(`<img src="${mirrorApp.img}" alt="">`); //this code adds an img element to the div with a class of box including the specic alt tag for the image. Using this to add our mirror message image that the user has selected.
+        $('.hidden').removeClass(`hidden`); // this code removes the class of hidden-title form the h2 of the .results section.
+        $('.box-img').prepend(`<img id="image" src="${mirrorApp.img}" alt="${mirrorApp.alt}">`); //this code adds an img element to the div with a class of box including the specic alt tag for the image. Using this to add our mirror message image that the user has selected.
     });//Close the function running when the user submits select.
+
+    $('.play-again').on('click', function (event) {
+        console.log("it works");
+    });
+
+    $('a').smoothScroll({
+        offset: 1000
+    });
+
 }//End of mirrorApp.events(); function 
 
 
@@ -311,5 +319,37 @@ mirrorApp.init = function () {
 //Calling mirror.App(); to run on page load inside the document ready function.
 $(function () {
     mirrorApp.init();
-});
 
+    $("h1").sparkle({
+
+        "color": ["#ff0080", "#ff0080", "#FFF"],
+        count: 70,
+        speed: 0
+
+    });
+
+    $("img").sparkle({
+
+        color: ["#2eafea", "#e56604"],
+        speed: 0.4
+
+    });
+
+    $("button").last().sparkle({
+        "color": "rainbow",
+        "minSize": 2,
+        "maxSize": 5,
+        "overlap": 20,
+        "direction": "down",
+        "speed": 1,
+        "fadeSpeed": 3000
+    });
+
+    $("button").first().sparkle({
+        "minSize": 2,
+        "maxSize": 10,
+        "overlap": 20,
+        "direction": "up",
+        "speed": 0.4
+    });
+});

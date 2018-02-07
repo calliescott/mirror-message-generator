@@ -8,70 +8,85 @@
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Open+Sans+Condensed:300" rel="stylesheet">
 </head>
-        <body>
-            <header>
-                <div class="wrapper">
-                    <h3>Need a little inspiration?</h3>
-                    <h1>Mirror Message Generator</h1>
-                    <h3>Answer the questions below to create your motivational quote!</h3>
-                    <a href="#question1">Let's go</a>
-                </div>
-            </header>
-            <form action="">
-                <div class="questions" id=:>
+    <body>
+        <header>
+            <div class="wrapper">
+                <h3>Need a little inspiration?</h3>
+                <h1>Mirror Message Generator</h1>
+                <h3>Answer the questions below to create your motivational quote!</h3>
+                <a href="#question1" class="start-link"><span class="start-link-span">Let's go</span></a>
+            </div>
+        </header>
+        <form action="" id="form-top">
+            <div class="wrapper">
+                <div class="questions questions-theme" id="question1">
                     <h2>Overall Topic</h2>
-                    <input type="radio" name="theme" value="career" id="career">
-                    <label for="career">Career</label>
+                    <div class="theme-container">
+                        <input type="radio" name="theme" value="career" id="career">
+                        <label for="career"><span class="radio">Career</span></label>
+                    </div>
 
-                    <input type="radio" name="theme" value="relationships" id="relationships">
-                    <label for="relationships">Relationships</label>
+                    <div class="theme-container">
+                        <input type="radio" name="theme" value="relationships" id="relationships">
+                        <label for="relationships"><span class="radio">Relationships</span></label>
+                    </div>
                     
-                    <input type="radio" name="theme" value="health" id="health">
-                    <label for="health">Health</label>
+                    <div class="theme-container">
+                        <input type="radio" name="theme" value="health" id="health">
+                        <label for="health"><span class="radio">Health</span></label>
+                    </div>
                     
-                    <input type="radio" name="theme" value="general" id="general">
-                    <label for="general">General</label>
+                    <div class="theme-container">
+                        <input type="radio" name="theme" value="general" id="general">
+                        <label for="general"><span class="radio">General</span></label>
+                    </div>
                 </div>
                 
-                <div class="questions">
+                <div class="questions questions-tone">
                     <h2>Personality/Tone of Voice</h2>
                     <input type="radio" name="mood" value="boho" id="boho">
-                    <label for="boho">Boho</label>
+                    <label for="boho">I love a little woo woo.</label>
                     
-                    <input type="radio" name="mood" value="sarcasm" id="sarcasm">
-                    <label for="sarcasm">Sarcasm</label>
+                    <input type="radio" name="mood" value="sarcastic" id="sarcastic">
+                    <label for="sarcastic">Sarcastic</label>
                     
                     <input type="radio" name="mood" value="funny" id="funny">
-                    <label for="funny">Funny</label>
+                    <label for="funny">Make me laugh.</label>
                     
-                    <input type="radio" name="mood" value="tough" id="tough">
-                    <label for="tough">Serious</label>
+                    <input type="radio" name="mood" value="serious" id="serious">
+                    <label for="serious">Serious</label>
                 </div>
                 
-                <div class="questions">
-                    <h2>Length</h2>
+                <div class="questions questions-length">
+                    <h2>How long should it be?</h2>
                     <input type="radio" name="length" value="short" id="short">
-                    <label for="short">Short</label>
+                    <label for="short">Short + Sweet</label>
                     
                     <input type="radio" name="length" value="long" id="long">
                     <label for="long">Long</label> 
                 </div>
-                
-
+        
                 <button>Submit</button>
-            </form>
-            <section class="results">
-                <h2 class="hidden">Your mirror Message</h2>
-                <div class="box hidden"></div>
-            </section>
-            <footer>
-                <h3></h3>
-            </footer>
-        </body>
-
-        <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+            </div>
+        </form>
+        <section class="results">
+            <div class="wrapper">
+                <h2 class="hidden">Your Mirror Message</h2>
+                <div class="box-img hidden sparkley"></div>
+                <a href="https://twitter.com/intent/tweet?button_hashtag=MirrorMessage&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #MirrorMessage</a>
+                <a href="#form-top" class="play-again">I want more.</a>
+            </div>
+        </section>
+        <footer>
+            <h3></h3>
+        </footer>
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+            crossorigin='anonymous'></script>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
         <script src="script.js"></script>
-    </title>
+        <script src="https://simeydotme.github.io/jQuery-canvas-sparkles/dist/jquery-canvas-sparkles.js"></script>
+    </body>
 </head>
 <body>
     

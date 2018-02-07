@@ -3,8 +3,75 @@
     }
 
 
-.box {
-    height: 300px;
-    width: 400px;
-    background-color: teal;
+form {
+    width: 100%;
+    height: 100%;
+    background-color: $color4;
+    padding: 5rem 0rem;
+    h2 {
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
+
+.questions  {
+    height: 100%;
+    width: 100%;
+    padding: 5rem 0rem;
+    background-color: $color1;
+    border-radius: 1.2rem;
+    margin-bottom: 1.2rem;
+    .theme-container input[type="radio"] {
+        display: none;
+    }
+}
+
+.theme-container {
+    margin-bottom: 10px;
+    padding: 1rem;
+    max-width: calc(100% - 12rem);
+    margin-right: 2rem;
+    margin-left: 10rem;
+    text-align: left;
+}
+
+.theme-container label {
+    position: relative;
+}
+
+.theme-container span.radio::before, .theme-container span.radio::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.theme-container span.radio:hover {
+    cursor: pointer;
+}
+
+.theme-container span.radio::before {
+    left: -52px;
+    width: 45px;
+    height: 25px;
+    background-color: $color5;
+    border-radius: 50px;
+}
+
+.theme-container span.radio::after {
+    left: -49px;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    background-color: $color4;
+    transition: left .25s, background-color.25s;
+}
+
+input[type="radio"]:checked + label span.radio::after {
+    left: -27px;
+    background-color: $color3;  
+}
+
+
+
