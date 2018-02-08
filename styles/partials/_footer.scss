@@ -1,4 +1,17 @@
 footer {
     text-align: center;
     background-color: $color1;
+    .css-typing {
+        width: 30rem;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: type 5s steps(50, end);
+    }
+    @keyframes type {
+    from { width: 0; }
+    }
 }
+
+
+
+

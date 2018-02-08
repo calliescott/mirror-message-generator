@@ -151,10 +151,10 @@ h2, h3, h4, h5 {
 h2 {
   font-family: "Rammetto One", cursive;
   font-size: 5rem;
-  color: #4c4c47; }
+  color: #ff715b; }
 
 h4 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Homemade Apple", cursive; }
 
 h5 {
@@ -281,7 +281,8 @@ header {
 .next-container input, .questions-submit input {
   background-color: white;
   padding: 1rem 2.5rem;
-  border-radius: 12px; }
+  border-radius: 12px;
+  margin-left: 1rem; }
   .next-container input:active, .next-container input:hover, .next-container input:focus, .questions-submit input:active, .questions-submit input:hover, .questions-submit input:focus {
     border: #4c4c47 solid 2px; }
 
@@ -297,7 +298,11 @@ form {
     text-transform: uppercase;
     text-align: center; }
 
-.theme-container input[type="radio"] {
+.theme-container, .tone-container {
+  margin: 1rem .5rem;
+  max-width: calc(100% - 1rem); }
+
+.theme-container input[type="radio"], .tone-container input[type="radio"], .length-container input[type="radio"] {
   display: none; }
 
 .questions-theme, .questions-tone {
@@ -321,55 +326,31 @@ form {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
-.theme-title, .theme-question-container, .tone-questions-container {
-  min-height: 50rem;
-  display: inline; }
-
-.theme-question-container, .tone-questions-container {
-  padding-left: 8em;
-  width: 50%; }
+.theme-right, .tone-left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start; }
 
 .theme-title, .tone-title {
   background-color: white;
-  width: 50%; }
+  width: 50%;
+  text-align: center; }
 
 .theme-container {
   padding: 1rem; }
-
-.theme-container label {
-  position: relative; }
-
-.theme-container span.radio::before, .theme-container span.radio::after {
-  content: '';
-  position: absolute;
-  top: 5;
-  bottom: 5;
-  margin: 0; }
-
-.theme-container span.radio:hover {
-  cursor: pointer; }
-
-.theme-container span.radio::before {
-  left: -52px;
-  width: 45px;
-  height: 25px;
-  background-color: #ff715b;
-  border-radius: 50px;
-  border: 1px solid #2d2d2a; }
-
-.theme-container span.radio::after {
-  left: -49px;
-  width: 17px;
-  height: 17px;
-  border-radius: 10px;
-  background-color: #f59b8d;
-  -webkit-transition: left 0.25s, background-color 0.25s;
-  -o-transition: left 0.25s, background-color 0.25s;
-  transition: left 0.25s, background-color 0.25s; }
-
-input[type="radio"]:checked + label span.radio::after {
-  left: -27px;
-  background-color: #4c4c47; }
 
 .questions-length {
   display: -webkit-box;
@@ -401,19 +382,17 @@ input[type="radio"]:checked + label span.radio::after {
   max-width: 700px;
   padding: 20px; }
 
-.length-container {
+.length-container, .theme-container, .tone-container {
   display: inline-block; }
-  .length-container label {
+  .length-container label, .theme-container label, .tone-container label {
     background-color: white;
     padding: 1rem 2.5rem;
-    border-radius: 12px; }
-    .length-container label:active, .length-container label:hover, .length-container label:focus {
+    border-radius: 12px;
+    cursor: pointer; }
+    .length-container label:active, .length-container label:hover, .length-container label:focus, .theme-container label:active, .theme-container label:hover, .theme-container label:focus, .tone-container label:active, .tone-container label:hover, .tone-container label:focus {
       border: #4c4c47 solid 2px; }
 
-.length-container input[type="radio"] {
-  opacity: 0; }
-
-.length-container input[type="radio"]:checked + label {
+.theme-container input[type="radio"]:checked + label, .tone-container input[type="radio"]:checked + label, .length-container input[type="radio"]:checked + label {
   border: 2px solid #4c4c47; }
 
 .box-img {
@@ -433,6 +412,20 @@ input[type="radio"]:checked + label span.radio::after {
 footer {
   text-align: center;
   background-color: white; }
+  footer .css-typing {
+    width: 30rem;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end); }
+
+@-webkit-keyframes type {
+  from {
+    width: 0; } }
+
+@keyframes type {
+  from {
+    width: 0; } }
 
 html {
   font-size: 62.5%; }

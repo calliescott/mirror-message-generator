@@ -255,6 +255,13 @@ mirrorApp.events = function () {
         }, 'slow'
         );
     });
+    $('.begin-btn').on('click', function (event) {
+        $('html, body').animate({
+            scrollTop: $(".question1").offset().top
+        }, 'slow'
+        );
+    });
+
 
     $('form').on('submit', function(event) {
 
@@ -323,16 +330,16 @@ mirrorApp.events = function () {
         $('.box-img').prepend(`<img id="image" src="${mirrorApp.img}" alt="${mirrorApp.alt}">`); //this code adds an img element to the div with a class of box including the specic alt tag for the image. Using this to add our mirror message image that the user has selected.
     });//Close the function running when the user submits select.
 
-    $('.play-again').on('click', function (event) {
-        console.log("it works");
-    });
-
     $('a').smoothScroll({
         offset: 1000
     });
 
 }//End of mirrorApp.events(); function 
 
+mirrorApp.sparkleHover = function() {
+    $('.box-img').sparkle();
+    console.log("its working");
+}
 
 
 //Organzing all functions needed to run on page load into one function.
