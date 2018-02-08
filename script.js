@@ -243,6 +243,19 @@ mirrorApp.mirrorMessages = {
 
 //when the form is submitted, grab the user's selection, using the on method and inserting a callback function.
 mirrorApp.events = function () {
+
+    $('.next-one').on('click', function(event) {
+        $('html, body').animate({
+            scrollTop: $(".question2").offset().top}, 'slow'
+        );
+    });
+    $('.next-two').on('click', function (event) {
+        $('html, body').animate({
+            scrollTop: $(".question3").offset().top
+        }, 'slow'
+        );
+    });
+
     $('form').on('submit', function(event) {
 
         //prevent the page from refreshing on submit event
@@ -294,7 +307,18 @@ mirrorApp.events = function () {
         mirrorApp.alt = mirrorApp.themeMoodLength[0].alt;
         
 
-
+        $('.next-three').on('click', function (event) {
+            $('html, body').animate({
+                scrollTop: $(".results").offset().top
+            }, 'slow'
+            );
+        });
+        $('.next-four').on('click', function (event) {
+            $('html, body').animate({
+                scrollTop: $(".restart").offset().top
+            }, 'slow'
+            );
+        });
         $('.hidden').removeClass(`hidden`); // this code removes the class of hidden-title form the h2 of the .results section.
         $('.box-img').prepend(`<img id="image" src="${mirrorApp.img}" alt="${mirrorApp.alt}">`); //this code adds an img element to the div with a class of box including the specic alt tag for the image. Using this to add our mirror message image that the user has selected.
     });//Close the function running when the user submits select.
@@ -318,38 +342,5 @@ mirrorApp.init = function () {
 
 //Calling mirror.App(); to run on page load inside the document ready function.
 $(function () {
-    mirrorApp.init();
-
-    $("h1").sparkle({
-
-        "color": ["#ff0080", "#ff0080", "#FFF"],
-        count: 70,
-        speed: 0
-
-    });
-
-    $("img").sparkle({
-
-        color: ["#2eafea", "#e56604"],
-        speed: 0.4
-
-    });
-
-    $("button").last().sparkle({
-        "color": "rainbow",
-        "minSize": 2,
-        "maxSize": 5,
-        "overlap": 20,
-        "direction": "down",
-        "speed": 1,
-        "fadeSpeed": 3000
-    });
-
-    $("button").first().sparkle({
-        "minSize": 2,
-        "maxSize": 10,
-        "overlap": 20,
-        "direction": "up",
-        "speed": 0.4
-    });
+    mirrorApp.init();  
 });

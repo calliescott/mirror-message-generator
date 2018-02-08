@@ -1,39 +1,70 @@
 .hidden {
-        visibility: hidden;
+        display: none;
     }
+
+.next-container input, .questions-submit input {
+    background-color: $color1;
+    padding: 1rem 2.5rem;
+    border-radius: 12px;
+    &:active, &:hover, &:focus {
+        border: $color3 solid 2px;
+    }
+}
+
+.questions-theme, .questions-tone, .questions-length {
+    height: 100vh;
+    border: 5px solid $color3;
+}
+
 
 
 form {
     width: 100%;
     height: 100%;
     background-color: $color4;
-    padding: 5rem 0rem;
     h2 {
         text-transform: uppercase;
         text-align: center;
     }
 }
 
-.questions  {
-    height: 100%;
-    width: 100%;
-    padding: 5rem 0rem;
-    background-color: $color1;
-    border-radius: 1.2rem;
-    margin-bottom: 1.2rem;
-    .theme-container input[type="radio"] {
-        display: none;
-    }
+.theme-container input[type="radio"] {
+    display: none;
 }
 
-.theme-container {
-    margin-bottom: 10px;
-    padding: 1rem;
-    max-width: calc(100% - 12rem);
-    margin-right: 2rem;
-    margin-left: 10rem;
-    text-align: left;
+.questions-theme, .questions-tone {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
+
+.questions-theme {
+    flex-direction: row;
+}
+
+.questions-tone {
+    flex-direction: row-reverse;
+}
+
+.theme-title, .theme-question-container, .tone-questions-container  {
+    min-height: 50rem;
+    display: inline;
+}
+
+.theme-question-container, .tone-questions-container {
+    padding-left: 8em;
+    width: 50%;
+}
+
+.theme-title, .tone-title {
+    background-color: $color1;
+    width: 50%;
+}
+
+.theme-container{
+    padding: 1rem;
+}
+
 
 .theme-container label {
     position: relative;
@@ -42,8 +73,8 @@ form {
 .theme-container span.radio::before, .theme-container span.radio::after {
     content:'';
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 5;
+    bottom: 5;
     margin: 0;
 }
 
@@ -57,6 +88,7 @@ form {
     height: 25px;
     background-color: $color5;
     border-radius: 50px;
+    border: 1px solid $color2;
 }
 
 .theme-container span.radio::after {
@@ -73,5 +105,46 @@ input[type="radio"]:checked + label span.radio::after {
     background-color: $color3;  
 }
 
+//Styling specific to the second question:
 
+
+
+
+//Styling for the last question regarding length:
+
+.questions-length {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.length-questions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.length-container {
+    display: inline-block;
+    label {
+        background-color: $color1;
+        padding: 1rem 2.5rem;
+        border-radius: 12px;
+        &:active, &:hover, &:focus {
+            border: $color3 solid 2px;
+        }
+    }
+}
+
+
+.length-container input[type="radio"] {
+    opacity: 0;
+}
+
+.length-container input[type="radio"]:checked + label {
+    border: 2px solid $color3;
+}
 
