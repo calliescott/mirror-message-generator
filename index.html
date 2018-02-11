@@ -4,27 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mirror Message Generator</title>
+    <title>Mirror Message Generator | By Callie Scott</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Open+Sans+Condensed:300|Rammetto+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Open+Sans|Oswald:400,700" rel="stylesheet">
 </head>
     <body>
-        <header class="restart">
+        <header class="header">
             <div class="wrapper">
-                <div class="header-img">
-                    <img src="images/note-icon.svg" alt="Post It Note Icon">
-                </div>
-                <div class="header-text">
                     <h1>Mirror Message Generator</h1>
-                    <h3>Need a little inspiration?</h3>
-                    <h3>Answer the questions below to create your customized motivational quote!</h3>
-                    <a href="#question1" class="start-link begin-btn"><span class="start-link-span">Let's go</span></a>
+                    <p>Need a little inspiration?</p>
+                    <p>Answer the questions below to create your customized motivational quote!</p>
+                    <a href="#question1" class="start-a">Let's Go!</a>
                 </div>
             </div>
         </header>
-        <form action="" >
-            <div class="questions-theme" id="question1">
-                <div class="theme-title" id="form-top">
+        <form action="">
+            <div class="questions-theme question1" id ="question1">
+                <div class="theme-title">
                     <h4>Start by choosing a </h4>
                     <h2>FOCUS</h2>
                 </div><!-- /.theme-title ends-->
@@ -32,31 +28,31 @@
                     <div class="theme-question-container">
                         <div class="theme-container">
                             <input type="radio" name="theme" value="career" id="career">
-                            <label for="career"><span class="radio">Career - Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ratione!</span></label>
+                            <label for="career"><span class="radio">Future #GirlBoss in the making.</span></label>
                         </div><!-- /.theme-container ends -->
 
                         <div class="theme-container">
                             <input type="radio" name="theme" value="relationships" id="relationships">
-                            <label for="relationships"><span class="radio">Relationships - Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ratione!</span></label>
+                            <label for="relationships"><span class="radio">The last time I was somebody's type I was donating blood.</span></label>
                         </div><!-- /.theme-container ends -->
                         
                         <div class="theme-container">
                             <input type="radio" name="theme" value="health" id="health">
-                            <label for="health"><span class="radio">Health - Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ratione!</span></label>
+                            <label for="health"><span class="radio">Eat. Sleep. Gym Repeat.</span></label>
                         </div><!-- /.theme-container ends -->
                         
                         <div class="theme-container">
                             <input type="radio" name="theme" value="general" id="general">
-                            <label for="general"><span class="radio">General - Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ratione!</span></label>
+                            <label for="general"><span class="radio">How do you know if you're having a midlife crisis?</span></label>
                         </div><!-- /.theme-container ends -->
                     </div><!-- /.theme-question-container ends -->
                     <div class="next-container">
-                        <input type="submit" value="Next" class="next-btn next-one">
+                        <a href="#question2">Next</a>
                     </div>
                 </div>
             </div>
             
-            <div class="questions-tone question2">
+            <div class="questions-tone question2" id="question2">
                 <div class="tone-title">
                     <h4>Now tell us a bit about your </h4>
                     <h2>Personality</h2>
@@ -65,31 +61,31 @@
                     <div class="tone-question-container">
                         <div class="tone-container">
                             <input type="radio" class="option-input radio" name="mood" value="boho" id="boho">
-                            <label for="boho">I love a little woo woo.</label>
+                            <label for="boho">Channeling my inner gypsy.</label>
                         </div>
 
                         <div class="tone-container">
-                            <input type="radio" class="option-input radio" name="mood" value="sarcastic" id="sarcastic">
-                            <label for="sarcastic">Sarcastic</label>
+                            <input type="radio" class="option-input radio" name="mood" value="funny" id="funny">
+                            <label for="funny">Fluent in sarcasm.</label>
                         </div>
 
                         <div class="tone-container">
-                            <input type="radio"  class="option-input radio"name="mood" value="funny" id="funny">
-                            <label for="funny">Make me laugh.</label>
+                            <input type="radio"  class="option-input radio"name="mood" value="other" id="other">
+                            <label for="other">Depends on the day, the time, the week.</label>
                         </div>
 
                         <div class="tone-container">
                             <input type="radio" class="option-input radio" name="mood" value="serious" id="serious">
-                            <label for="serious">Serious</label>
+                            <label for="serious">It's not my fault, I'm just type A.</label>
                         </div>
                     </div>
                     <div class="next-container">
-                        <input type="submit" value="Next" class="next-btn next-two">
+                        <a href="#question3">Next</a>
                     </div>
                 </div>
             </div>
             
-            <div class="questions-length question3">
+            <div class="questions-length question3" id="question3">
                 <div class="length-title">
                     <h4>Finally, select a</h4>
                     <h2>length</h2>
@@ -97,12 +93,12 @@
                 <div class="length-question-container">
                     <div class="length-container">
                         <input type="radio" class="length-btn" name="length" value="short" id="short">
-                        <label for="short">Short + Sweet</label>
+                        <label for="short">Short + sweet</label>
                     </div>
                 
                     <div class="length-container">
                         <input type="radio" class="length-btn" name="length" value="long" id="long">
-                        <label for="long">Long</label>
+                        <label for="long">Gimme a story.</label>
                     </div>
                 </div>
                 <div class="questions-submit">
@@ -112,26 +108,25 @@
             </div><!-- /.questions-length ends -->
         </form>
 
-        <section class="results hidden">
+        <section class="results hidden" id="results">
             <div class="wrapper">
                 <h2 class="hidden">Your Mirror Message</h2>
                 <div class="box-img hidden"></div>
                 <div class="next-container">
-                    <input type="submit" value="Create another one!" class="next-btn next-four">
+                     <input type="submit" class="next-four" value="Create another quote">
                 </div>
             </div>
         </section>
 
 
         <footer>
-            <h5 class="css-typing">Created by Callie Scott.</h5>
+            <p class="css-typing">Created by Callie Scott.</p>
         </footer>
         <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
             crossorigin='anonymous'></script>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
         <script src="script.js"></script>
-        <script src="sparkle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+
     </body>
 </head>
 <body>

@@ -7,56 +7,56 @@ mirrorApp.mirrorMessages = {
             theme: 'career',
             mood: 'boho',
             length: 'short',
-            image: 'images/mirrorMessageImage.png',
+            image: 'images/career-boho-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'career',
             mood: 'boho',
             length: 'long',
-            image: 'images/mirrorMessageImageBlue.png',
+            image: 'images/career-boho-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'career',
             mood: 'funny',
             length: 'short',
-            image: 'mirrorMessageImageGreen.png',
+            image: 'images/career-funny-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'career',
             mood: 'funny',
             length: 'long',
-            image: 'mirrorMessageImageYellow.png',
+            image: 'images/career-funny-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'career',
             mood: 'serious',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/career-serious-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'career',
             mood: 'serious',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/career-serious-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'career',
-            mood: 'sarcastic',
+            mood: 'other',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/career-other-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'career',
-            mood: 'sarcastic',
+            mood: 'other',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/career-other-long.png',
             alt: 'appropriate alt tag for image'
         }
     ], //closing the career array within the mirrorApp.mirrorMessages object
@@ -65,56 +65,56 @@ mirrorApp.mirrorMessages = {
             theme: 'relationships',
             mood: 'boho',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/relationships-boho-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'relationships',
             mood: 'boho',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/relationships-boho-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'relationships',
             mood: 'funny',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/relationships-funny-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'relationships',
             mood: 'funny',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/relationships-funny-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'relationships',
             mood: 'serious',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/relationships-serious-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'relationships',
             mood: 'serious',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/relationships-serious-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'relationships',
-            mood: 'sarcastic',
+            mood: 'other',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/relationships-other-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'relationships',
-            mood: 'sarcastic',
+            mood: 'other',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/relationships-other-long.png',
             alt: 'appropriate alt tag for image'
         }
     ], //closing the relationship array within the  mirrorApp.mirrorMessages object
@@ -123,56 +123,56 @@ mirrorApp.mirrorMessages = {
             theme: 'health',
             mood: 'boho',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/health-boho-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'health',
             mood: 'boho',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/health-boho-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'health',
             mood: 'funny',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/health-funny-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'health',
             mood: 'funny',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/health-funny-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'health',
             mood: 'serious',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/health-serious-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'health',
             mood: 'serious',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/health-serious-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'health',
-            mood: 'sarcastic',
+            mood: 'other',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/health-other-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'health',
-            mood: 'sarcastic',
+            mood: 'other',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/health-other-long.png',
             alt: 'appropriate alt tag for image'
         }
     ], //closing the health array within the mirrorApp.mirrorMessages object
@@ -181,56 +181,56 @@ mirrorApp.mirrorMessages = {
             theme: 'general',
             mood: 'boho',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/general-boho-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'general',
             mood: 'boho',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/general-boho-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'general',
             mood: 'funny',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/general-funny-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'general',
             mood: 'funny',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/general-funny-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'general',
             mood: 'serious',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/general-serious-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'general',
             mood: 'serious',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/general-serious-long.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'general',
-            mood: 'sarcastic',
+            mood: 'other',
             length: 'short',
-            image: 'mirrorMessageImage.png',
+            image: 'images/general-other-short.png',
             alt: 'appropriate alt tag for image'
         },
         {
             theme: 'general',
-            mood: 'sarcastic',
+            mood: 'other',
             length: 'long',
-            image: 'mirrorMessageImage.png',
+            image: 'images/general-other-long.png',
             alt: 'appropriate alt tag for image'
         }
     ] //closing the general array within the mirrorApp.mirrorMessages object
@@ -243,24 +243,16 @@ mirrorApp.mirrorMessages = {
 
 //when the form is submitted, grab the user's selection, using the on method and inserting a callback function.
 mirrorApp.events = function () {
+    
+    $('a').smoothScroll({
+    });
 
-    $('.next-one').on('click', function(event) {
-        $('html, body').animate({
-            scrollTop: $(".question2").offset().top}, 'slow'
-        );
-    });
-    $('.next-two').on('click', function (event) {
-        $('html, body').animate({
-            scrollTop: $(".question3").offset().top
-        }, 'slow'
-        );
-    });
-    $('.begin-btn').on('click', function (event) {
-        $('html, body').animate({
-            scrollTop: $(".question1").offset().top
-        }, 'slow'
-        );
-    });
+    
+
+    //insert code that refreshes the page on click
+    $('.next-four').on('click', function (event) {
+        window.location.reload(true);
+    })
 
 
     $('form').on('submit', function(event) {
@@ -313,33 +305,22 @@ mirrorApp.events = function () {
         //creating a variable to hold the selected mirror messages alt tag content for later.
         mirrorApp.alt = mirrorApp.themeMoodLength[0].alt;
         
-
         $('.next-three').on('click', function (event) {
             $('html, body').animate({
                 scrollTop: $(".results").offset().top
             }, 'slow'
             );
         });
-        $('.next-four').on('click', function (event) {
-            $('html, body').animate({
-                scrollTop: $(".restart").offset().top
-            }, 'slow'
-            );
-        });
-        $('.hidden').removeClass(`hidden`); // this code removes the class of hidden-title form the h2 of the .results section.
+       
+
+        $('form').addClass(`hidden`); //  this code adds the class of hidden on the .results section when the form is submitted. 
+        $('.hidden').removeClass(`hidden`); // this code removes the class of hidden on the.results section.
         $('.box-img').prepend(`<img id="image" src="${mirrorApp.img}" alt="${mirrorApp.alt}">`); //this code adds an img element to the div with a class of box including the specic alt tag for the image. Using this to add our mirror message image that the user has selected.
     });//Close the function running when the user submits select.
 
-    $('a').smoothScroll({
-        offset: 1000
-    });
+    
 
 }//End of mirrorApp.events(); function 
-
-mirrorApp.sparkleHover = function() {
-    $('.box-img').sparkle();
-    console.log("its working");
-}
 
 
 //Organzing all functions needed to run on page load into one function.

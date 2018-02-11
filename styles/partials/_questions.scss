@@ -1,15 +1,5 @@
-.hidden {
-        display: none;
-    }
-
-.next-container input, .questions-submit input {
-    background-color: $color1;
-    padding: 1rem 2.5rem;
-    border-radius: 12px;
-    margin-left: 1rem;
-    &:active, &:hover, &:focus {
-        border: $color3 solid 2px;
-    }
+.hidden { 
+    display: none;
 }
 
 .questions-theme, .questions-tone, .questions-length {
@@ -27,11 +17,6 @@ form {
         text-transform: uppercase;
         text-align: center;
     }
-}
-
-.theme-container, .tone-container {
-    margin: 1rem .5rem;
-    max-width: calc(100% - 1rem);
 }
 
 .theme-container input[type="radio"], .tone-container input[type="radio"], .length-container input[type="radio"] {
@@ -52,37 +37,34 @@ form {
     flex-direction: row-reverse;
 }
 
-// .theme-title, .tone-title, .length-title  {
-//     min-height: 50rem;
-//     display: inline;
-// }
-
 .theme-right, .tone-left {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-content: flex-start;
+    margin-top: 25%;
 }
 
 .theme-title, .tone-title {
     background-color: $color1;
     width: 50%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.theme-container{
+
+.theme-container, .tone-container{
     padding: 1rem;
+    max-width: calc(100% - 4em);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: block;
 }
-
-
-
-
-
-//Styling specific to the second question:
-
-
 
 
 //Styling for the last question regarding length:
@@ -93,30 +75,53 @@ form {
     justify-content: center;
     align-items: center;
 }
-.length-questions-container {
+.length-question-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 4rem 2rem 3rem 2rem;
     max-width: 700px;
     padding: 20px;
 }
 
 .length-container, .theme-container, .tone-container {
-    display: inline-block;
     label {
         background-color: $color1;
         padding: 1rem 2.5rem;
         border-radius: 12px;
         cursor: pointer;
+        overflow-wrap: break-word;
+        display: block;
+        line-height: 2;
         &:active, &:hover, &:focus {
-            border: $color3 solid 2px;
+            border: $color5 solid 2px;
+            background-color: $color5;
+            color: $color1;
         }
     }
+}
+
+input.next-three{
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1rem 5rem;
+    font-family: $scriptFont;
+    color: $color3;
+    background-color: $color4;
+    border: none;
+    &:hover, &:focus {
+        color: $color1;
+    }
+}
+
+.length-container label {
+    margin: 0 2rem;
 }
 
 
 .theme-container input[type="radio"]:checked + label, .tone-container input[type="radio"]:checked + label , .length-container input[type="radio"]:checked + label  {
     border: 2px solid $color3;
+    background-color: $color3;
+    color: $color1;
 }
 

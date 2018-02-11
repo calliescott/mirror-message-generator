@@ -10,24 +10,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @import "partials/footer.scss";
 
 
-
-
-html {
-    font-size: 62.5%
-}
-
-body {
-    font-size: 1.6rem;
-    font-family: $baseFont;
-    color: $color3;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-}
-
 .wrapper {
     max-width: 1080px;
     margin: 0 auto;

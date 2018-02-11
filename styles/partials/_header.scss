@@ -9,93 +9,12 @@ header {
     background-position: center;
     .wrapper {
         display: flex;
-        flex-direction: row;
-        .header-img {
-            max-width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a {
+            font-family: $headerFont;
+            text-transform: uppercase;
         }
-        img {
-            height: 500px;
-            top: 7%;
-            display: block;
-        }
-        .header-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: right;
-            max-width: 50%;
-        }
-    }
-    a {
-        font-size: 3rem;
-    }
-    .start-link {
-        color: $color5;
-        padding: 25px 25px;
-        background: transparent;
-        outline: none !important;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-        width: 130px;
-        height: 40px;
-        line-height: 42px;
-        padding: 0;
-        margin: 0 auto;
-        border: none;
-    }
-
-    .start-link span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-    }
-    .start-link:before, .start-link:after {
-    position: absolute;
-    content: "";
-    height: 0%;
-    width: 2px;
-    background: #000;
-    }
-    .start-link:before {
-    right: 0;
-    top: 0;
-    transition: all 0.1s ease;
-    }
-    .start-link:after {
-    left: 0;
-    bottom: 0;
-    transition: all 0.1s 0.2s ease;
-    }
-    .start-link:hover:before {
-    transition: all 0.1s 0.2s ease;
-    height: 100%;
-    }
-    .start-link:hover:after {
-    transition: all 0.1s ease;
-    height: 100%;
-    }
-    .start-link span:before, .start-link span:after {
-    position: absolute;
-    content: "";
-    background: #000;
-    }
-    .start-link span:before {
-    left: 0;
-    top: 0;
-    width: 0%;
-    height: 2px;
-    transition: all 0.1s 0.1s ease;
-    }
-    .start-link span:after {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    }
-    .start-link span:hover:before {
-        width: 100%;
     }
 }
