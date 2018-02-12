@@ -230,7 +230,7 @@ header .fa-arrow-circle-down {
   font-size: 4rem;
   color: #4c4c47;
   letter-spacing: 0;
-  margin-top: 10rem; }
+  margin-top: 17rem; }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 682px) {
@@ -493,8 +493,9 @@ input.next-three {
 
 /* Landscape phones and down */
 .results {
-  height: 100%;
-  text-align: center; }
+  height: 100vh;
+  text-align: center;
+  padding-top: 10rem; }
 
 .box-img {
   height: 100%;
@@ -537,7 +538,11 @@ input.next-four {
 footer {
   text-align: right;
   background-color: white;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  position: fixed;
+  Width: 100%;
+  bottom: 0;
+  border-top: 1px solid #4c4c47; }
 
 .wrapper {
   max-width: 1080px;
