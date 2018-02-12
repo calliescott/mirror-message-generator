@@ -34,3 +34,27 @@ input.next-four{
 .share a:hover {
     color: $color4;
 }
+
+
+
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .box-img img {
+        img {
+        max-width: 400px;
+        min-height: 400px;
+        }
+    }
+}
+
+@media (max-width: 401px) {
+    .box-img img {
+        img {
+        max-width: 320px;
+        min-height: 320px;
+        }
+    }
+}

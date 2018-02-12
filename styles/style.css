@@ -154,13 +154,14 @@ body {
 
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: calc(4rem + (50 - 4) * ((100vw - 30rem) / (1080 - 300)));
+  font-size: calc(4rem + (60 - 4) * ((100vw - 30rem) / (1080 - 300)));
   color: #ff715b;
   display: block;
   text-align: center;
   text-transform: uppercase;
   line-height: 10.5rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-top: 0; }
 
 h2, h3, h4, h5 {
   letter-spacing: .3rem;
@@ -169,7 +170,7 @@ h2, h3, h4, h5 {
 
 h2 {
   font-family: "Oswald", sans-serif;
-  font-size: calc(5rem + (9 - 5) * ((100vw - 30rem) / (1080 - 300)));
+  font-size: calc(5rem + (26 - 5) * ((100vw - 30rem) / (1080 - 300)));
   color: #ff715b; }
 
 h4 {
@@ -197,6 +198,20 @@ a {
   display: inline-block;
   text-align: center; }
   a:hover, a:focus {
+    color: white; }
+
+.fa-heart, .fa-lightbulb {
+  color: #ff715b;
+  display: inline-block; }
+
+header .fa-arrow-circle-down {
+  color: #ff715b; }
+  header .fa-arrow-circle-downhover {
+    color: #4c4c47; }
+
+.fa-arrow-circle-down {
+  color: #4c4c47; }
+  .fa-arrow-circle-downhover {
     color: white; }
 
 .theme-title h2 {
@@ -263,6 +278,22 @@ header {
         color: #f59b8d; }
     header .wrapper p {
       text-align: center; }
+    header .wrapper .header-fa {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+      align-items: space-between; }
+      header .wrapper .header-fa i {
+        width: 50%; }
 
 @media (max-width: 682px) {
   header {
@@ -328,6 +359,11 @@ form {
   -ms-flex-line-pack: start;
   align-content: flex-start;
   margin-top: 1.8rem; }
+
+.theme-right {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
 
 .theme-title, .tone-title {
   background-color: white;
@@ -486,6 +522,17 @@ input.next-four {
 
 .share a:hover {
   color: #f59b8d; }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .box-img img img {
+    max-width: 400px;
+    min-height: 400px; } }
+
+@media (max-width: 401px) {
+  .box-img img img {
+    max-width: 320px;
+    min-height: 320px; } }
 
 footer {
   text-align: right;

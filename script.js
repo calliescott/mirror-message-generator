@@ -8,56 +8,56 @@ mirrorApp.mirrorMessages = {
             mood: 'boho',
             length: 'short',
             image: 'images/career-boho-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Live less out of habit and more out of intent.'
         },
         {
             theme: 'career',
             mood: 'boho',
             length: 'long',
             image: 'images/career-boho-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Sometimes in the wind of change we find our true direction.'
         },
         {
             theme: 'career',
             mood: 'funny',
             length: 'short',
             image: 'images/career-funny-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Confidence level: Kanye West'
         },
         {
             theme: 'career',
             mood: 'funny',
             length: 'long',
             image: 'images/career-funny-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Life status: currently holding it all together with one bobby pin.'
         },
         {
             theme: 'career',
             mood: 'serious',
             length: 'short',
             image: 'images/career-serious-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Hustle until your haters ask if you\re hiring.'
         },
         {
             theme: 'career',
             mood: 'serious',
             length: 'long',
             image: 'images/career-serious-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Every morning you have two choices: continue to sleep with your dreams or wake up and chase them.'
         },
         {
             theme: 'career',
             mood: 'other',
             length: 'short',
             image: 'images/career-other-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Make your passion your paycheck'
         },
         {
             theme: 'career',
             mood: 'other',
             length: 'long',
             image: 'images/career-other-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'You can\t be some difficult, shy person who is not able to look somebody in the face; You have to present yourself. You have to know how to talk about your vision, your focus and what you believe in.'
         }
     ], //closing the career array within the mirrorApp.mirrorMessages object
     relationships: [
@@ -66,56 +66,56 @@ mirrorApp.mirrorMessages = {
             mood: 'boho',
             length: 'short',
             image: 'images/relationships-boho-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'It is not your job to be everything to everyone.'
         },
         {
             theme: 'relationships',
             mood: 'boho',
             length: 'long',
             image: 'images/relationships-boho-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Souls recognize each other by vibes, not appearances.'
         },
         {
             theme: 'relationships',
             mood: 'funny',
             length: 'short',
             image: 'images/relationships-funny-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'If you love someone, let them nap.'
         },
         {
             theme: 'relationships',
             mood: 'funny',
             length: 'long',
             image: 'images/relationships-funny-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'I\m very font of you because you\re just my type.'
         },
         {
             theme: 'relationships',
             mood: 'serious',
             length: 'short',
             image: 'images/relationships-serious-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'My only relationship goal is someone who motivates me to become a better person and shows me the potential I don\t see in myself.'
         },
         {
             theme: 'relationships',
             mood: 'serious',
             length: 'long',
             image: 'images/relationships-serious-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Sometimes the past gives you the strength to face the future, and sometimes the future is brighter than you think it is. Sometimes when you think you know something, it only means you know nothing at all, and sometimes you arrive only to find out what you love isn\t good for you, and sometimes what\s bad heals you in ways you never would have imagined.'
         },
         {
             theme: 'relationships',
             mood: 'other',
             length: 'short',
             image: 'images/relationships-other-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'If the love doesn\t feel like 90\s R&B I don\t want it.'
         },
         {
             theme: 'relationships',
             mood: 'other',
             length: 'long',
             image: 'images/relationships-other-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'We often want it so badly that we ruin it before it begins. Overthinking. Fantasizing. Just let it naturally evolve.'
         }
     ], //closing the relationship array within the  mirrorApp.mirrorMessages object
     health: [
@@ -124,56 +124,56 @@ mirrorApp.mirrorMessages = {
             mood: 'boho',
             length: 'short',
             image: 'images/health-boho-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Within the chaos, magic is found.'
         },
         {
             theme: 'health',
             mood: 'boho',
             length: 'long',
             image: 'images/health-boho-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'I got my mind on my mantra, and my mantra on my mind.'
         },
         {
             theme: 'health',
             mood: 'funny',
             length: 'short',
             image: 'images/health-funny-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'I think my soulmate might be carbs.'
         },
         {
             theme: 'health',
             mood: 'funny',
             length: 'long',
             image: 'images/health-funny-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Throw your hair in a bun, downward dog like a boss, and handle it.'
         },
         {
             theme: 'health',
             mood: 'serious',
             length: 'short',
             image: 'images/health-serious-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Health is not just about what you\re eating. It\s also about what you\re thinking and saying.'
         },
         {
             theme: 'health',
             mood: 'serious',
             length: 'long',
             image: 'images/health-serious-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Let\s Go.'
         },
         {
             theme: 'health',
             mood: 'other',
             length: 'short',
             image: 'images/health-other-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Exhale the bullshit.'
         },
         {
             theme: 'health',
             mood: 'other',
             length: 'long',
             image: 'images/health-other-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Why be moody when you can shake your booty.'
         }
     ], //closing the health array within the mirrorApp.mirrorMessages object
     general:[
@@ -182,56 +182,56 @@ mirrorApp.mirrorMessages = {
             mood: 'boho',
             length: 'short',
             image: 'images/general-boho-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Paradise isn\t a place. it\s a feeling.'
         },
         {
             theme: 'general',
             mood: 'boho',
             length: 'long',
             image: 'images/general-boho-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'We are stars wrapped in skin. The light you are seeking has always been within.'
         },
         {
             theme: 'general',
             mood: 'funny',
             length: 'short',
             image: 'images/general-funny-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Note to self: You good, you poppin!'
         },
         {
             theme: 'general',
             mood: 'funny',
             length: 'long',
             image: 'images/general-funny-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Stress level: Winona Ryder in every single scene of stranger things.'
         },
         {
             theme: 'general',
             mood: 'serious',
             length: 'short',
             image: 'images/general-serious-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Most folks are as happy as they make up their minds to be.'
         },
         {
             theme: 'general',
             mood: 'serious',
             length: 'long',
             image: 'images/general-serious-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Do no get upset with people or situations, both are powerless without your reaction.'
         },
         {
             theme: 'general',
             mood: 'other',
             length: 'short',
             image: 'images/general-other-short.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Drink some coffee, put on some gangster rap, and handle it.'
         },
         {
             theme: 'general',
             mood: 'other',
             length: 'long',
             image: 'images/general-other-long.png',
-            alt: 'appropriate alt tag for image'
+            alt: 'Love yourself. Forgive yourself. Be true to yourself. How you treat yourself sets the standard for how others will treat you.'
         }
     ] //closing the general array within the mirrorApp.mirrorMessages object
 }; //Closing the mirrorApp.mirrorMessages object
