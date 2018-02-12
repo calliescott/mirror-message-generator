@@ -2,6 +2,10 @@
     display: none;
 }
 
+.hide-form {
+    display: none;
+}
+
 .questions-theme, .questions-tone, .questions-length {
     height: 100vh;
     border: 5px solid $color3;
@@ -44,7 +48,7 @@ form {
     align-items: flex-start;
     justify-content: space-between;
     align-content: flex-start;
-    margin-top: 25%;
+    margin-top: 1.8rem;
 }
 
 .theme-title, .tone-title {
@@ -125,3 +129,56 @@ input.next-three{
     color: $color1;
 }
 
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 682px) {
+
+    .questions-theme, .questions-tone, .questions-length {
+        height: 100%;
+        border: none;
+    }
+    .questions-theme, .questions-tone, .length-questions-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    }
+
+    .theme-right, .tone-left, .theme-title, .tone-title {
+    width: 100%;
+    background-color: $color4;
+    }
+
+    .theme-right, .tone-left {
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    }
+
+    .length-container, .theme-container, .tone-container {
+    label {
+        text-align: center;
+        padding: 2rem 2.5rem;
+        }
+    }
+    .next-container a {
+        display: none;
+    }
+
+    .length-container{
+        padding: 1rem;
+        max-width: calc(100% - 4em);
+        margin-left: 2rem;
+        margin-right: 2rem;
+        display: block;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

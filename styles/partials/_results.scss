@@ -1,19 +1,36 @@
 .results {
-    height: 100vh;
+    height: 100%;
+    text-align: center;
 }
+
 .box-img {
     height: 100%;
-    max-width: calc(100% - 60rem);
-    margin: 2rem 30rem;
-    background-color: $color4;
-    border-radius: 12px;
     display: block;
     img {
-        width: calc(100% - 5rem);
+        max-width: 460px;
+        min-height: 460px;
+        width: calc(100% - 2rem);
         height: 100%;
         padding: 0;
-        margin: 2.5rem;
+        margin: 1rem;
         border-radius: 12px;
+        border: 5px solid $color4;
     }
 }
 
+input.next-four{
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1rem 5rem;
+    font-family: $scriptFont;
+    color: $color3;
+    background-color: $color1;
+    border: none;
+    &:hover, &:focus {
+        color: $color4;
+    }
+}
+
+.share a:hover {
+    color: $color4;
+}

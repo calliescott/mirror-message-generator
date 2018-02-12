@@ -154,13 +154,13 @@ body {
 
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 7em;
-  /*makes font 60px*/
-  color: #4c4c47;
+  font-size: calc(4rem + (50 - 4) * ((100vw - 30rem) / (1080 - 300)));
+  color: #ff715b;
   display: block;
   text-align: center;
   text-transform: uppercase;
-  line-height: 10.5rem; }
+  line-height: 10.5rem;
+  margin-bottom: 2rem; }
 
 h2, h3, h4, h5 {
   letter-spacing: .3rem;
@@ -169,15 +169,23 @@ h2, h3, h4, h5 {
 
 h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 5rem;
+  font-size: calc(5rem + (9 - 5) * ((100vw - 30rem) / (1080 - 300)));
   color: #ff715b; }
 
 h4 {
+  font-size: calc(1.8rem + (2.5 - 1.8) * ((100vw - 30rem) / (1080 - 300)));
   font-size: 2.5rem;
   font-family: "Homemade Apple", cursive; }
 
 h5 {
   text-transform: uppercase; }
+
+p {
+  font-size: calc(1.8rem + (2 - 1.8) * ((100vw - 30rem) / (1080 - 300)));
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #4c4c47; }
 
 a {
   font-size: 3rem;
@@ -192,10 +200,9 @@ a {
     color: white; }
 
 .theme-title h2 {
-  font-size: 10rem; }
+  padding: 0; }
 
 .length-title h2 {
-  font-size: 10rem;
   margin: 0;
   padding: 0;
   color: white;
@@ -204,20 +211,34 @@ a {
 
 .results h2 {
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Homemade Apple", cursive;
   font-size: 4rem;
   color: #4c4c47;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  margin-top: 10rem; }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 682px) {
+  .theme-title, .tone-title {
+    padding-top: 4rem; }
+    .theme-title h2, .tone-title h2 {
+      text-align: center;
+      font-family: "Oswald", sans-serif;
+      font-size: 4rem;
+      color: white;
+      letter-spacing: 0;
+      text-transform: uppercase; } }
+
+@media (max-width: 507px) {
+  h1 {
+    line-height: 6.5rem; } }
 
 header {
   height: 100vh;
+  padding-top: 20rem;
   width: 100%;
   border: 5px solid #4c4c47;
-  background-color: #ffe6cc;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1000 1000'%3E%3Cg fill='%23ffc9b0'%3E%3Cpolygon points='1000%2C-50 0%2C-50 500%2C450'/%3E%3Cpolygon points='550%2C500 1050%2C1000 1050%2C0'/%3E%3Cpolygon points='-50%2C0 -50%2C1000 450%2C500'/%3E%3Cpolygon points='0%2C1050 1000%2C1050 500%2C550'/%3E%3C/g%3E%3Cg fill='%23ffac94'%3E%3Cpolygon points='1000%2C-133.3 0%2C-133.3 500%2C366.7'/%3E%3Cpolygon points='633.3%2C500 1133.3%2C1000 1133.3%2C0'/%3E%3Cpolygon points='-133.3%2C0 -133.3%2C1000 366.7%2C500'/%3E%3Cpolygon points='0%2C1133.3 1000%2C1133.3 500%2C633.3'/%3E%3C/g%3E%3Cg fill='%23ff8e77'%3E%3Cpolygon points='1000%2C-216.7 0%2C-216.7 500%2C283.3'/%3E%3Cpolygon points='716.7%2C500 1216.7%2C1000 1216.7%2C0'/%3E%3Cpolygon points='-216.7%2C0 -216.7%2C1000 283.3%2C500'/%3E%3Cpolygon points='0%2C1216.7 1000%2C1216.7 500%2C716.7'/%3E%3C/g%3E%3Cg fill='%23ff715b'%3E%3Cpolygon points='1000%2C-300 0%2C-300 500%2C200'/%3E%3Cpolygon points='800%2C500 1300%2C1000 1300%2C0'/%3E%3Cpolygon points='-300%2C0 -300%2C1000 200%2C500'/%3E%3Cpolygon points='0%2C1300 1000%2C1300 500%2C800'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='%23f59b8d' points='0%2C707.1 0%2C292.9 292.9%2C0 707.1%2C0 1000%2C292.9 1000%2C707.1 707.1%2C1000 292.9%2C1000'/%3E%3Cg fill='%23f89181'%3E%3Cpolygon points='464.6%2C-242.5 -242.5%2C464.6 464.6%2C464.6'/%3E%3Cpolygon points='535.4%2C464.6 1242.5%2C464.6 535.4%2C-242.5'/%3E%3Cpolygon points='-242.5%2C535.4 464.6%2C1242.5 464.6%2C535.4'/%3E%3Cpolygon points='535.4%2C1242.5 1242.5%2C535.4 535.4%2C535.4'/%3E%3C/g%3E%3Cg fill='%23fa8674'%3E%3Cpolygon points='405.7%2C-301.4 -301.4%2C405.7 405.7%2C405.7'/%3E%3Cpolygon points='594.3%2C405.7 1301.4%2C405.7 594.3%2C-301.4'/%3E%3Cpolygon points='-301.4%2C594.3 405.7%2C1301.4 405.7%2C594.3'/%3E%3Cpolygon points='594.3%2C1301.4 1301.4%2C594.3 594.3%2C594.3'/%3E%3C/g%3E%3Cg fill='%23fd7c68'%3E%3Cpolygon points='346.8%2C-360.3 -360.3%2C346.8 346.8%2C346.8'/%3E%3Cpolygon points='653.2%2C346.8 1360.3%2C346.8 653.2%2C-360.3'/%3E%3Cpolygon points='-360.3%2C653.2 346.8%2C1360.3 346.8%2C653.2'/%3E%3Cpolygon points='653.2%2C1360.3 1360.3%2C653.2 653.2%2C653.2'/%3E%3C/g%3E%3Cg fill='%23ff715b'%3E%3Cpolygon points='287.9%2C-419.2 -419.2%2C287.9 287.9%2C287.9'/%3E%3Cpolygon points='712.1%2C287.9 1419.2%2C287.9 712.1%2C-419.2'/%3E%3Cpolygon points='-419.2%2C712.1 287.9%2C1419.2 287.9%2C712.1'/%3E%3Cpolygon points='712.1%2C1419.2 1419.2%2C712.1 712.1%2C712.1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; }
+  background-color: white; }
   header .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -231,12 +252,26 @@ header {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding: 0 1.8rem; }
     header .wrapper a {
-      font-family: "Oswald", sans-serif;
-      text-transform: uppercase; }
+      font-family: "Homemade Apple", cursive;
+      color: #4c4c47; }
+      header .wrapper a:hover {
+        color: #f59b8d; }
+    header .wrapper p {
+      text-align: center; }
+
+@media (max-width: 682px) {
+  header {
+    padding-top: 10rem; } }
 
 .hidden {
+  display: none; }
+
+.hide-form {
   display: none; }
 
 .questions-theme, .questions-tone, .questions-length {
@@ -292,7 +327,7 @@ form {
   justify-content: space-between;
   -ms-flex-line-pack: start;
   align-content: flex-start;
-  margin-top: 25%; }
+  margin-top: 1.8rem; }
 
 .theme-title, .tone-title {
   background-color: white;
@@ -381,40 +416,81 @@ input.next-three {
   background-color: #4c4c47;
   color: white; }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 682px) {
+  .questions-theme, .questions-tone, .questions-length {
+    height: 100%;
+    border: none; }
+  .questions-theme, .questions-tone, .length-questions-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 4rem; }
+  .theme-right, .tone-left, .theme-title, .tone-title {
+    width: 100%;
+    background-color: #f59b8d; }
+  .theme-right, .tone-left {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+  .length-container label, .theme-container label, .tone-container label {
+    text-align: center;
+    padding: 2rem 2.5rem; }
+  .next-container a {
+    display: none; }
+  .length-container {
+    padding: 1rem;
+    max-width: calc(100% - 4em);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: block; } }
+
+/* Landscape phones and down */
 .results {
-  height: 100vh; }
+  height: 100%;
+  text-align: center; }
 
 .box-img {
   height: 100%;
-  max-width: calc(100% - 60rem);
-  margin: 2rem 30rem;
-  background-color: #f59b8d;
-  border-radius: 12px;
   display: block; }
   .box-img img {
-    width: calc(100% - 5rem);
+    max-width: 460px;
+    min-height: 460px;
+    width: calc(100% - 2rem);
     height: 100%;
     padding: 0;
-    margin: 2.5rem;
-    border-radius: 12px; }
+    margin: 1rem;
+    border-radius: 12px;
+    border: 5px solid #f59b8d; }
+
+input.next-four {
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1rem 5rem;
+  font-family: "Homemade Apple", cursive;
+  color: #4c4c47;
+  background-color: white;
+  border: none; }
+  input.next-four:hover, input.next-four:focus {
+    color: #f59b8d; }
+
+.share a:hover {
+  color: #f59b8d; }
 
 footer {
-  text-align: center;
-  background-color: white; }
-  footer .css-typing {
-    width: 30rem;
-    white-space: nowrap;
-    overflow: hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end); }
-
-@-webkit-keyframes type {
-  from {
-    width: 0; } }
-
-@keyframes type {
-  from {
-    width: 0; } }
+  text-align: right;
+  background-color: white;
+  margin-right: 1rem; }
 
 .wrapper {
   max-width: 1080px;

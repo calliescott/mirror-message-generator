@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mirror Message Generator | By Callie Scott</title>
+    <title>Inspiration Station| By Callie Scott</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Open+Sans|Oswald:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
     <body>
         <header class="header">
             <div class="wrapper">
-                    <h1>Mirror Message Generator</h1>
-                    <p>Need a little inspiration?</p>
-                    <p>Answer the questions below to create your customized motivational quote!</p>
-                    <a href="#question1" class="start-a">Let's Go!</a>
+                    <h1>Inspiration Station</h1>
+                    <p>Looking for a caffiene-free cup of inspo to start your day?</p>
+                    <p>Answer the questions below to create your own customized motivational mirror message!</p>
+                    <a href="#question1" class="start-a">Begin</a>
                 </div>
             </div>
         </header>
-        <form action="">
+        <form action="" class="toggle">
             <div class="questions-theme question1" id ="question1">
                 <div class="theme-title">
                     <h4>Start by choosing a </h4>
@@ -110,10 +111,17 @@
 
         <section class="results hidden" id="results">
             <div class="wrapper">
-                <h2 class="hidden">Your Mirror Message</h2>
+                <h2>Your Mirror Message</h2>
                 <div class="box-img hidden"></div>
+                <div class="share">
+                    <a href="https://twitter.com/intent/tweet?text=Morning20%Motivation"><i class="fab fa-twitter fa-2x"></i></a>
+                <a data-pin-do="buttonBookmark" data-pin-tall="true" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/">
+                     <i class="fab fa-pinterest fa-2x"></i>
+                </a>
+                </a>
+                </div>
                 <div class="next-container">
-                     <input type="submit" class="next-four" value="Create another quote">
+                     <input type="submit" class="next-four" value="Create another quote!">
                 </div>
             </div>
         </section>
@@ -126,6 +134,8 @@
             crossorigin='anonymous'></script>
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+        
+        <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
     </body>
 </head>

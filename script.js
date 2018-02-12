@@ -305,21 +305,10 @@ mirrorApp.events = function () {
         //creating a variable to hold the selected mirror messages alt tag content for later.
         mirrorApp.alt = mirrorApp.themeMoodLength[0].alt;
         
-        $('.next-three').on('click', function (event) {
-            $('html, body').animate({
-                scrollTop: $(".results").offset().top
-            }, 'slow'
-            );
-        });
-       
-
-        $('form').addClass(`hidden`); //  this code adds the class of hidden on the .results section when the form is submitted. 
-        $('.hidden').removeClass(`hidden`); // this code removes the class of hidden on the.results section.
+        $('.toggle').addClass("hide-form"); //  this code adds the class of hidden on the form section when the form is submitted. 
+        $('.hidden').removeClass("hidden"); // this code removes the class of hidden on the.results section.
         $('.box-img').prepend(`<img id="image" src="${mirrorApp.img}" alt="${mirrorApp.alt}">`); //this code adds an img element to the div with a class of box including the specic alt tag for the image. Using this to add our mirror message image that the user has selected.
     });//Close the function running when the user submits select.
-
-    
-
 }//End of mirrorApp.events(); function 
 
 
