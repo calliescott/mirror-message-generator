@@ -8,9 +8,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 @import "partials/questions.scss";
 @import "partials/results.scss";
 @import "partials/footer.scss";
+@import "partials/mirror.scss";
 
 
 .wrapper {
     max-width: 1080px;
     margin: 0 auto;
+}
+
+body {
+    width: 100%;
 }

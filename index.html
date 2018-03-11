@@ -16,6 +16,7 @@
                     <i class="far fa-lightbulb fa-5x"></i>
                     <i class="far fa-heart fa-5x"></i>
                 </div>
+
                 <h1>Inspiration Station</h1>
                 <p>Looking for a caffiene-free cup of inspo to start your day?</p>
                 <p>Answer the questions below to create your own customized motivational mirror message!</p>
@@ -28,31 +29,29 @@
                     <h4>Start by choosing a </h4>
                     <h2>FOCUS</h2>
                 </div><!-- /.theme-title ends-->
-                <div class="theme-right">
-                    <div class="theme-question-container">
-                        <div class="theme-container">
-                            <input type="radio" name="theme" value="career" id="career">
-                            <label for="career"><span class="radio">Future #GirlBoss in the making.</span></label>
-                        </div><!-- /.theme-container ends -->
+                <div class="theme-question-container">
+                    <div class="theme-container">
+                        <input type="radio" name="theme" value="career" id="career">
+                        <label for="career"><span class="radio">Future #GirlBoss in the making.</span></label>
+                    </div><!-- /.theme-container ends -->
 
-                        <div class="theme-container">
-                            <input type="radio" name="theme" value="relationships" id="relationships">
-                            <label for="relationships"><span class="radio">The last time I was somebody's type I was donating blood.</span></label>
-                        </div><!-- /.theme-container ends -->
-                        
-                        <div class="theme-container">
-                            <input type="radio" name="theme" value="health" id="health">
-                            <label for="health"><span class="radio">Eat. Sleep. Gym Repeat.</span></label>
-                        </div><!-- /.theme-container ends -->
-                        
-                        <div class="theme-container">
-                            <input type="radio" name="theme" value="general" id="general">
-                            <label for="general"><span class="radio">How do you know if you're having a midlife crisis?</span></label>
-                        </div><!-- /.theme-container ends -->
-                    </div><!-- /.theme-question-container ends -->
-                    <div class="next-container">
-                        <a href="#question2"><i class="fas fa-arrow-circle-down fa-2x"></i></a>
-                    </div>
+                    <div class="theme-container">
+                        <input type="radio" name="theme" value="relationships" id="relationships">
+                        <label for="relationships"><span class="radio">The last time I was somebody's type I was donating blood.</span></label>
+                    </div><!-- /.theme-container ends -->
+                    
+                    <div class="theme-container">
+                        <input type="radio" name="theme" value="health" id="health">
+                        <label for="health"><span class="radio">Eat. Sleep. Gym Repeat.</span></label>
+                    </div><!-- /.theme-container ends -->
+                    
+                    <div class="theme-container">
+                        <input type="radio" name="theme" value="general" id="general">
+                        <label for="general"><span class="radio">How do you know if you're having a midlife crisis?</span></label>
+                    </div><!-- /.theme-container ends -->
+                </div><!-- /.theme-question-container ends -->
+                <div class="next-container">
+                    <a href="#question2"><i class="fas fa-arrow-circle-down fa-2x"></i></a>
                 </div>
             </div>
             
@@ -61,7 +60,7 @@
                     <h4>Now tell us a bit about your </h4>
                     <h2>Personality</h2>
                 </div>
-                <div class="tone-left">
+                <div class="tone-question-container">
                     <div class="tone-question-container">
                         <div class="tone-container">
                             <input type="radio" class="option-input radio" name="mood" value="boho" id="boho">
@@ -106,7 +105,7 @@
                     </div>
                 </div>
                 <div class="questions-submit">
-                    <input type="submit" class="next-three" value="Create!">
+                    <input type="submit" class="next-three" value="Click to Create!">
                 </div>
                 <!-- /.questions-submit ends -->
             </div><!-- /.questions-length ends -->
@@ -115,7 +114,17 @@
         <section class="results hidden" id="results">
             <div class="wrapper">
                 <h2>Your Mirror Message</h2>
-                <div class="box-img hidden"></div>
+                <div class="mirror">
+                    <div class="outer-oval">
+                        <div class="inner-oval">
+                            <div class="sm-streak"></div>
+                            <div class="lrg-streak"></div>
+                        </div>
+                    </div>
+                    <div class="mirror-ledge">
+                    </div>
+                    <div class="mirror-ledge-shelf"></div>
+                </div>
                 <div class="share">
                     <a href="https://twitter.com/intent/tweet?text=Morning20%Motivation"><i class="fab fa-twitter fa-2x"></i></a>
                 <a data-pin-do="buttonBookmark" data-pin-tall="true" data-pin-round="true" href="https://www.pinterest.com/pin/create/button/">
@@ -137,7 +146,6 @@
             crossorigin='anonymous'></script>
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
-        
         <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
     </body>

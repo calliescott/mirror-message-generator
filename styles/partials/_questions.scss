@@ -8,7 +8,6 @@
 
 .questions-theme, .questions-tone, .questions-length {
     height: 100vh;
-    border: 5px solid $color3;
 }
 
 
@@ -26,47 +25,7 @@ form {
 .theme-container input[type="radio"], .tone-container input[type="radio"], .length-container input[type="radio"] {
     display: none;
 }
-
-.questions-theme, .questions-tone {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.questions-theme {
-    flex-direction: row;
-}
-
-.questions-tone {
-    flex-direction: row-reverse;
-}
-
-.theme-right, .tone-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    align-content: flex-start;
-    margin-top: 1.8rem;
-}
-
-.theme-right {
-    align-items: flex-end;
-}
-
-.theme-title, .tone-title {
-    background-color: $color1;
-    width: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.theme-container, .tone-container{
+.theme-container{
     padding: 1rem;
     max-width: calc(100% - 4em);
     margin-left: 2rem;
@@ -74,14 +33,20 @@ form {
     display: block;
 }
 
+.questions-tone {
+    background-color: $color1;
+}
+
 
 //Styling for the last question regarding length:
 
-.questions-length {
+.questions-length, .questions-tone, .questions-theme {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 .length-question-container {
     display: flex;
@@ -90,6 +55,10 @@ form {
     margin: 4rem 2rem 3rem 2rem;
     max-width: 700px;
     padding: 20px;
+}
+
+.theme-question-container, .tone-question-container {
+    margin-top: 4rem;
 }
 
 .length-container, .theme-container, .tone-container {
@@ -109,6 +78,11 @@ form {
     }
 }
 
+.tone-container label {
+    background-color: $color4;
+    color: $color1;
+}
+
 input.next-three{
     font-size: 3rem;
     cursor: pointer;
@@ -122,6 +96,9 @@ input.next-three{
     }
 }
 
+.tone-container label {
+    margin: 2rem 0;
+}
 .length-container label {
     margin: 0 2rem;
 }
@@ -147,10 +124,11 @@ input.next-three{
         height: 100%;
         border: none;
     }
-    .questions-theme, .questions-tone, .length-questions-container{
+    .questions-theme, .questions-tone, .length-question-container{
     display: flex;
     flex-direction: column;
     padding-bottom: 4rem;
+    margin: 0 auto;
     }
 
     .theme-right, .tone-left, .theme-title, .tone-title {
@@ -185,4 +163,15 @@ input.next-three{
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+}
+
+@media (max-width: 320px) {
+    .length-container{
+        max-width: calc(100% - 4em);
+        margin: 0;
+        display: block;
+    }
+    .length-question-container {
+        margin: 0;
+    }
 }
