@@ -4,9 +4,9 @@
 }
 .outer-oval {
     background: #FF715B;
-    width: 450px;
-    height: 550px;
-    border-radius: 450px/500px;
+    width: 400px;
+    height: 500px;
+    border-radius: 400px/450px;
     position: relative;
     margin: 0 auto;
     border-right: 5px solid grey;
@@ -25,9 +25,9 @@
 
 .inner-oval {
     background: lightgrey;
-    width: 400px;
-    height: 500px;
-    border-radius: 250px/300px;
+    width: 350px;
+    height: 450px;
+    border-radius: 200px/250px;
     position: absolute;
     left: 0;
     right: 0;
@@ -54,7 +54,7 @@
     background: white;
     z-index: 5;
     position: absolute;
-    top: 250px;
+    top: 175px;
     bottom: 0;
     right: 100px;
     transform: skew(140deg);
@@ -66,11 +66,11 @@
 
 .lrg-streak {
     width: 20px;
-    height: 150px;
+    height: 175px;
     background: white;
     z-index: 5;
     position: absolute;
-    top: 320px;
+    top: 225px;
     bottom: 0;
     right: 120px;
     transform: skew(140deg);
@@ -123,6 +123,7 @@
     left: 50px;
     font-family: $scriptFont;
     width: 200px;
+    color: $color5;
     @media (max-width: 480px) {
         top: 30%;
         left: 0;

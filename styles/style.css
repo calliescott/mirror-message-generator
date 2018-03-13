@@ -154,7 +154,8 @@ body {
 
 h1 {
   font-family: "Oswald", sans-serif;
-  font-size: calc(4rem + (60 - 4) * ((100vw - 30rem) / (1080 - 300)));
+  font-size: calc(1.8rem + (30 - 1.8) * ((100vw - 30rem) / (1080 - 300)));
+  letter-spacing: 2rem;
   color: #ff715b;
   display: block;
   text-align: center;
@@ -241,17 +242,6 @@ header .fa-arrow-circle-down {
       margin-top: 0; } }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 682px) {
-  .theme-title, .tone-title {
-    padding-top: 4rem; }
-    .theme-title h2, .tone-title h2 {
-      text-align: center;
-      font-family: "Oswald", sans-serif;
-      font-size: 4rem;
-      color: white;
-      letter-spacing: 0;
-      text-transform: uppercase; } }
-
 @media (max-width: 507px) {
   h1 {
     line-height: 6.5rem; } }
@@ -260,9 +250,40 @@ header {
   height: 100vh;
   padding-top: 20rem;
   width: 100%;
-  background-color: white;
   -webkit-box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, right top, left top, from(#ffffff), color-stop(#ffe0db), to(#ffb5a9));
+  background: -webkit-linear-gradient(right, #ffffff, #ffe0db, #ffb5a9);
+  background: -o-linear-gradient(right, #ffffff, #ffe0db, #ffb5a9);
+  background: linear-gradient(270deg, #ffffff, #ffe0db, #ffb5a9);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
   header .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -280,6 +301,22 @@ header {
     -ms-flex-line-pack: center;
     align-content: center;
     padding: 0 1.8rem; }
+    header .wrapper .header-txt {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: white;
+      padding: 2rem; }
     header .wrapper a {
       font-family: "Homemade Apple", cursive;
       color: #4c4c47; }
@@ -429,18 +466,6 @@ input.next-three {
     flex-direction: column;
     padding-bottom: 4rem;
     margin: 0 auto; }
-  .theme-right, .tone-left, .theme-title, .tone-title {
-    width: 100%;
-    background-color: #f59b8d; }
-  .theme-right, .tone-left {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center; }
   .length-container label, .theme-container label, .tone-container label {
     text-align: center;
     padding: 2rem 2.5rem; }
@@ -463,9 +488,7 @@ input.next-three {
     margin: 0; } }
 
 .results {
-  height: 100vh;
   text-align: center;
-  padding-top: 5rem;
   margin: 0 auto; }
   @media (max-width: 320px) {
     .results {
@@ -499,27 +522,6 @@ input.next-four {
       font-size: 2rem;
       padding: 1rem 0; } }
 
-.share {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  @media (max-width: 320px) {
-    .share {
-      margin-top: 150px; } }
-
-.share a:hover {
-  color: #f59b8d; }
-
 footer {
   text-align: right;
   background-color: white;
@@ -539,9 +541,9 @@ footer {
 
 .outer-oval {
   background: #FF715B;
-  width: 450px;
-  height: 550px;
-  border-radius: 450px/500px;
+  width: 400px;
+  height: 500px;
+  border-radius: 400px/450px;
   position: relative;
   margin: 0 auto;
   border-right: 5px solid grey; }
@@ -559,9 +561,9 @@ footer {
 
 .inner-oval {
   background: lightgrey;
-  width: 400px;
-  height: 500px;
-  border-radius: 250px/300px;
+  width: 350px;
+  height: 450px;
+  border-radius: 200px/250px;
   position: absolute;
   left: 0;
   right: 0;
@@ -587,7 +589,7 @@ footer {
   background: white;
   z-index: 5;
   position: absolute;
-  top: 250px;
+  top: 175px;
   bottom: 0;
   right: 100px;
   -webkit-transform: skew(140deg);
@@ -600,11 +602,11 @@ footer {
 
 .lrg-streak {
   width: 20px;
-  height: 150px;
+  height: 175px;
   background: white;
   z-index: 5;
   position: absolute;
-  top: 320px;
+  top: 225px;
   bottom: 0;
   right: 120px;
   -webkit-transform: skew(140deg);
@@ -654,7 +656,8 @@ footer {
   top: 100px;
   left: 50px;
   font-family: "Homemade Apple", cursive;
-  width: 200px; }
+  width: 200px;
+  color: #ff715b; }
   @media (max-width: 480px) {
     .post-it {
       top: 30%;

@@ -16,7 +16,8 @@ body {
 
 h1 {
     font-family: $headerFont;
-    font-size: calc(4rem + (60 - 4) * ((100vw - 30rem) / (1080 - 300)));
+    font-size: calc(1.8rem + (30 - 1.8) * ((100vw - 30rem) / (1080 - 300)));
+    letter-spacing: 2rem;
     color: $color5;
     display: block;
     text-align: center;
@@ -124,17 +125,7 @@ header {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 682px) {
-    .theme-title, .tone-title {
-        padding-top: 4rem;
-        h2 {
-            text-align: center;
-            font-family: $headerFont;
-            font-size: 4rem;
-            color: $color1;
-            letter-spacing: 0;
-            text-transform: uppercase;
-        }
-    }
+
 }
 
 @media (max-width: 507px) {
