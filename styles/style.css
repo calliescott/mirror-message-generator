@@ -177,6 +177,12 @@ h2 {
 h4 {
   font-size: calc(2rem + (2.5 - 2) * ((100vw - 30rem) / (1080 - 300)));
   font-family: "Homemade Apple", cursive; }
+  @media (max-width: 480px) {
+    h4 {
+      margin-top: 0;
+      width: calc(100% - 1rem);
+      margin-left: 0.5rem;
+      margin-right: 0.5rem; } }
   @media (max-width: 320px) {
     h4 {
       margin-top: 0; } }
@@ -245,6 +251,14 @@ header .fa-arrow-circle-down {
 @media (max-width: 507px) {
   h1 {
     line-height: 6.5rem; } }
+
+@media (max-width: 480px) {
+  h1 {
+    line-height: 2.5rem;
+    letter-spacing: 1rem; }
+  .header-txt p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem; } }
 
 header {
   height: 100vh;
@@ -506,7 +520,8 @@ input.next-three {
     max-width: 300px;
     padding: 1rem; }
   .questions-length, .questions-tone, .questions-theme {
-    padding-top: 3rem; }
+    padding-top: 3rem;
+    height: 100%; }
   .length-container label, .theme-container label, .tone-container label {
     padding: 1rem 1rem; } }
 
